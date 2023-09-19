@@ -1,0 +1,216 @@
+/* reset css*/
+
+/* 
+    1. Từ ngoài vào trong
+    2. Tự trên xuống dưới
+    3. Tổng quan đến chi tiết
+
+*/
+
+/* 
+    1. Vị trí
+    2. Kích thước
+    3. Màu sắc
+    4. Kiểu dáng ( Kiểu chữ, hình tròn,...)
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.text-while{
+    color: #fff !important;
+}
+#wrapper{
+
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#nav{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style: none;
+}
+#nav > li{
+    display: inline-block;
+}
+#nav li{
+    
+    position: relative;
+
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav > li:hover > a , #nav .subnav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#nav .nav-arrow-down{
+    font-size: 12px;
+}
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+    
+}
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+    
+}
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer; 
+}
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    
+
+}
+#slide{
+    margin-top: 46px;
+    padding-top: 50%;
+    position: relative;
+    background-image: url('/assets/img/slider/IU.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    
+
+}
+#slide .text-content{
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    line-height: 46px;
+    
+    
+}
+#slide .text-heading{
+    font-size: 24px;
+    font-weight: 500;
+}
+#slide .text-description{
+    font-size: 15px;
+}
+#content{
+    
+}
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+#content .section-subheading{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about-text{
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .members-item{
+    
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+#content .member-name{
+    font-size: 15px;
+   
+}
+#content .members-list{
+    margin-top: 48px;
+    margin-left: 48px;
+    overflow: hidden;
+}
+
+#content .member-avatar{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+/* Tour section */
+
+.tour-section{
+    background-color: #000;
+}
+#content .ti-heart{
+    color: #f44336;
+    
+}
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+
+}
+.tickets-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom:1px solid #ddd ;
+}
+.tickets-list .sold-out{
+
+}
+.tickets-list .quantity{
+
+}
+/* Footer section */
+#footer{
+
+}
